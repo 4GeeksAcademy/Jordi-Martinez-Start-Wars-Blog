@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+img{
+    max-height: 400px;
+    object-fit: cover;
+}
+h6{
+    color: white;
+    text-align: center;
+    line-height: 3.5;
+}
