@@ -7,16 +7,11 @@ import ShipsCard from "../component/shipscard.jsx";
 export const Starships = () => {
     const { store, actions } = useContext(Context);
 
-    const localStarships = () => {
-        let localShip = localStorage.getItem("starships")
-        return JSON.parse(localShip)
-    }
-
     return (
         <div className="container">
             <div className="row" style={{ overflowY: "hidden scroll", flexWrap: "nowrap" }}>
 
-                {localStarships().map((item, index) =>
+                {store.starships.map((item, index) =>
 
                     <ShipsCard key={item.url}
 

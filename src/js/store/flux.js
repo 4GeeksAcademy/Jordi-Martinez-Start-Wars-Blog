@@ -4,10 +4,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			favoritos: [],
 			urlBaseAPI: "https://www.swapi.tech/api",
 			urlBaseImg: "https://starwars-visualguide.com/assets/img/",
-			characters: [],
+			characters: JSON.parse(localStorage.getItem("characters")) || [],   
 			films: [],
 			species: [],
-			starships: [],
+			starships: JSON.parse(localStorage.getItem("starships")) || [],
 			planets: [],
 			search: [],
 
